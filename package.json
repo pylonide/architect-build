@@ -17,12 +17,12 @@
     },
     "dependencies": {
         "through": "~2.3.8",
-        "async": "~2.5.0",
+        "async": "~2.6.0",
         "mkdirp": "~0.5.1"
     },
     "devDependencies": {},
     "optionalDependencies": {
-        "uglify-js": "3.1.6"
+        "uglify-js": "3.2.1"
     },
     "license": "MIT"
 }
