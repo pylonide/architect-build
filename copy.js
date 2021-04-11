@@ -1,6 +1,6 @@
 var fs = require('fs');
 var path = require('path');
-var mkdirSync = require('mkdirp').sync;
+var mkdirSync = require('fs').mkdirsync;
 
 function convertPath(dir){
     if (process.platform == 'win32' && dir[0] == '/')
@@ -72,7 +72,7 @@ function copy(from, to, options) {
                     if (options.onDir && options.onDir(from, to) === false)
                         return;
                     try {
-                        mkdirSync(to);
+                        mkdirSync(to, {recursive: true});
                     } catch (e) {
                         return options.onError(e);
                     }
@@ -115,7 +115,7 @@ copy.file = function(from, to, replace) {
         write();
     } catch(e) {
         if (e.code == "ENOENT") {
-            mkdirSync(path.dirname(to));
+            mkdirSync(path.dirname(to), {recursive: true});
             write();
         } else {
             throw e;

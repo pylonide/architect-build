@@ -1,6 +1,5 @@
 var async = require("async");
 var fs = require("fs");
-var mkdirp = require("mkdirp");
 var moduleDeps = require("./module-deps");
 var path = require("path");
 
@@ -155,7 +154,7 @@ function build(config, opts, callback){
 function createOutputFolder(opts, cb) {
     var output = (opts.outputFolder || ".") + "/" + (opts.outputFile || "");
     output = path.dirname(output);
-    mkdirp(output, cb);
+    fs.mkdir(output, {recursive: true}, cb);
 }
 
 function compileLess(opts, sources, callback) {
