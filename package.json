@@ -28,6 +28,6 @@
   },
   "devDependencies": {},
   "optionalDependencies": {
-    "uglify-js": "3.13.9"
+    "uglify-js": "3.14.0"
   }
 }
