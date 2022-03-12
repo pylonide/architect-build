@@ -1,6 +1,6 @@
 {
   "name": "@pylonide/architect-build",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Concatenates and uglifies an architect config into one file with source map and incremental update support",
   "author": "Ajax.org B.V. <info@ajax.org>",
   "license": "MIT",
