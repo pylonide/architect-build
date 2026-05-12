@@ -1,6 +1,6 @@
 {
   "name": "@pylonide/architect-build",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "license": "MIT",
   "description": "Concatenates and uglifies an architect config into one file with source map and incremental update support",
   "author": "Sten Feldman <exile@chamber.ee>",
@@ -18,14 +18,14 @@
     "url": "https://github.com/pylonide/architect-build.git"
   },
   "engines": {
-    "node": ">= 20.19.0"
+    "node": ">= 22.22.2"
   },
   "scripts": {
     "test": "echo No Tests to run"
   },
   "dependencies": {
     "through": "~2.3.8",
-    "async": "~3.2.0"
+    "async": "~3.2.6"
   },
   "devDependencies": {},
   "optionalDependencies": {
